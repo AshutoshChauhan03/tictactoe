@@ -1,9 +1,9 @@
-<h1>Current Player : {{ player }}</h1>
+<h1>Current Player : {{ player.toUpperCase() }}</h1>
 
 <button nbButton outline status="danger" (click)="newGame()">Start New Game !</button>
 
 <h2 *ngIf="winner" style="color: seagreen;">
-    Player {{ winner }} won the game !
+    Player {{ winner.toUpperCase() }} won the game !
 </h2>
 <h2 *ngIf="!winner">
     Let's see who wins !
